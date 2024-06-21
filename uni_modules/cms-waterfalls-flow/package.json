@@ -1,7 +1,7 @@
 {
   "id": "cms-waterfalls-flow",
   "displayName": "易用瀑布流组件",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "易用瀑布流组件，仅测试了H5与小程序",
   "keywords": [
     "瀑布流"
