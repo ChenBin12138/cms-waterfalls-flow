@@ -124,12 +124,16 @@ export default {
 				let left = findLowIndex * this.colWidth + findLowIndex * uni.upx2px(this.vGap);
 				let top = this.heights[findLowIndex];
 				const hGapPx = uni.upx2px(this.hGap);
-
+				
 				if (top) {
 					top += hGapPx
 				}
 				this.heights[findLowIndex] = this.heights[findLowIndex] + itemH + hGapPx;
 				this.innerH = this.heights.reduce((max, num) => max < num ? num : max, 0);
+				
+				if(this.innerH){
+					this.innerH -= hGapPx
+				}
 
 				callback && callback({
 					left,
